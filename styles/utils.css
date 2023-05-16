@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .header {
+    @apply sticky top-0 z-30 w-full p-6 sm:px-4 shadow;
+    background: theme('colors.primary')
+  }
+  .footer {
+    @apply fixed bottom-0 z-30 w-full p-6 sm:px-4 shadow;
+    background: theme('colors.primary')
+  }
+  .font-secondary {
+    color: theme('colors.primary')
+  }
+  .input-wrapper {
+    @apply flex flex-col space-y-2;
+  }
+  .primary-button {
+    @apply bg-primary rounded-md mt-4 px-4 py-2;
+  }
+}
